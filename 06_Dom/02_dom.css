@@ -1,0 +1,16 @@
+#box {
+    height: 250px;
+    width: 100px;
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid black;
+}
+
+.boxx {
+    height: 250px;
+    width: 100px;
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid black;
+    margin-top: 5px;
+}
