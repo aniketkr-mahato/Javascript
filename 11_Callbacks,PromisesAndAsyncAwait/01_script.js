@@ -58,4 +58,27 @@ Promise {<fulfilled>: promise resolved.}
     Pending: the result is undefined
     Resolved: the result is a value (fulfilled)  // resolve(result)
     Rejected: the result is an error object  // reject(error)
+*//*
+Promises
+    .then() & .catch()
+
+    promise.then((res) => {...})  // used when promise is fulfilled
+    promise.catch((err) => {...})  
 */
+const getPromise = () => {
+    return new Promise((resolve, reject) => {
+        console.log("I am a promise");
+        // resolve("success");
+        reject("cause network error bro");
+    });
+};
+
+let promise2 = getPromise();
+
+promise2.then((res) => {  // res is the message we passed in resolve function line:71
+    console.log("promise fulfilled", res);
+});
+
+promise2.catch((err) => {  // err is the message we passed in reject function line:72
+    console.log("rejected", err);
+})
