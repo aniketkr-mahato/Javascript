@@ -81,4 +81,4 @@ promise2.then((res) => {  // res is the message we passed in resolve function li
 
 promise2.catch((err) => {  // err is the message we passed in reject function line:72
     console.log("rejected", err);
-})
+});
